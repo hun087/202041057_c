@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int main()
+{
+    float num1,num2;
+    char op;
+    
+    printf("두수와 연산 기호를 입력하세요 : ");
+    scanf("%f %c %f", &num1, &op, &num2);
+
+    switch()
+    {
+        case '+':
+        printf("%.f %c %.f = %.f", num1, op, num2, num1+num2);
+        case '-':
+        printf("%.f %c %.f = %.f", num1, op, num2, num1-num2);
+        case '*':
+        printf("%.f %c %.f = %.f", num1, op, num2, num1*num2);
+        case '/':
+        if(num1 =! 0){
+        printf("%.f %c %.f = %.f", num1, op, num2, num1/num2);
+        }
+        else if{
+        printf("0으로 나눌 수 없습니다.");
+        }
+        default :
+        printf("잘못된 연산자를 입력했습니다.");
+    }
+    return 0;
+}
+
+//두수와 연산기호를 입력하여 소수 첫째자리 식과 값을 출력하시오. (단, 0으로 나눌경우 0으로 나눌 수 없습니다 라는 메시지가 출력되도록 하시오.)
+//틀린 부분을 찾아 고치는 문제입니다.
